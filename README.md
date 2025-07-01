@@ -1,12 +1,12 @@
-🎵 音楽探索AIアプリ
+🎵 音楽探索AIアプリ (Music Discovery AI)
 好きなアーティスト名を入力すると、AIがそのアーティストの概要、影響関係、関連アーティストなどを自動で分析・表示してくれるWebアプリケーションです。
 
 ✨ 主な機能
-アーティスト概要: 入力されたアーティストの簡単な紹介と代表作を表示します。
+🎧 アーティスト概要: アーティストの簡単な紹介と代表作をリストアップします。
 
-音楽ジャンルのタグ付け: アーティストの音楽性を表すジャンルをタグで表示します。
+🏷️ ジャンルタグ: 音楽性を表すジャンルをハッシュタグ形式で表示します。
 
-影響関係の可視化:
+🗺️ 音楽マップ:
 
 そのアーティストに影響を与えたアーティスト
 
@@ -14,20 +14,9 @@
 
 そのアーティストが影響を与えたアーティスト
 
-参考文献の提示: Google検索APIを利用して、分析の根拠となった可能性のあるインタビュー記事などを提示します。
+📚 参考文献: Google検索APIを利用し、分析の根拠となった可能性のあるWeb上の記事を提示します。
 
-AIによるレコメンド: あなたが「今」聴くべきアーティストを、AIが情熱的に推薦します。
-
-🛠️ 使用技術
-フロントエンド: Streamlit
-
-AI連携: LangChain
-
-言語モデル (LLM): Google Gemini 1.5 Pro
-
-情報収集: Google Search API
-
-言語: Python
+🔥 AIレコメンド: あなたが「今」聴くべきアーティストを、AIが情熱的に推薦します。
 
 🚀 セットアップと実行方法
 1. 前提条件
@@ -36,12 +25,12 @@ Python 3.9 以上
 Git
 
 2. インストール
-まず、このリポジトリをクローン（ダウンロード）します。
+まず、このリポジトリをローカル環境にクローン（ダウンロード）します。
 
 git clone https://github.com/あなたのユーザー名/music-discovery-app.git
 cd music-discovery-app
 
-次に、仮想環境を作成し、必要なライブラリをインストールします。
+次に、Pythonの仮想環境を作成し、必要なライブラリをインストールします。
 
 # 仮想環境の作成
 python -m venv venv
@@ -56,7 +45,8 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 3. APIキーの設定
-このアプリケーションを実行するには、3種類のAPIキーが必要です。プロジェクトのルートに.envという名前のファイルを作成し、以下の内容を記述してください。
+このアプリケーションを実行するには、3種類のAPIキーが必要です。
+プロジェクトのルートディレクトリ（main.pyと同じ場所）に.envという名前のファイルを作成し、以下の内容を記述してください。
 
 # .env
 
@@ -71,7 +61,9 @@ GOOGLE_CSE_ID="ここにCSE IDを貼り付け"
 
 GOOGLE_API_KEY: Google AI Studio から取得できます。
 
-GOOGLE_API_KEY_SEARCH と GOOGLE_CSE_ID: Google Cloud Console と Programmable Search Engine から取得できます。詳細は公式ドキュメントを参照してください。
+GOOGLE_API_KEY_SEARCH と GOOGLE_CSE_ID: Google Cloud Console と Programmable Search Engine から取得できます。
+
+重要: .gitignoreファイルに.envが記載されているため、このファイルがGitHubに公開されることはありません。
 
 4. アプリケーションの実行
 以下のコマンドで、Streamlitアプリケーションを起動します。
