@@ -21,12 +21,12 @@
 🔥 AIレコメンド: あなたが「今」聴くべきアーティストを、AIが情熱的に推薦します。
 
 ## 🚀 セットアップと実行方法
-### 1. 前提条件
+## 1. 前提条件
 Python 3.9 以上
 
 Git
 
-### 2. インストール
+## 2. インストール
 まず、このリポジトリをローカル環境にクローン（ダウンロード）します。
 
 Bashバッシュ
@@ -48,7 +48,7 @@ source venv/bin/activate
 #### 必要なライブラリのインストール
 pip install -r requirements.txt
 
-### 3. APIキーの設定
+## 3. APIキーの設定
 このアプリケーションを実行するには、3種類のAPIキーが必要です。
 プロジェクトのルートディレクトリ（main.pyと同じ場所）に.envという名前のファイルを作成し、以下の内容を記述してください。
 
@@ -56,15 +56,15 @@ pip install -r requirements.txt
 
 '''
 
-# .env
-# Google AI (Gemini) のAPIキー
+.env
+Google AI (Gemini) のAPIキー. 
 GOOGLE_API_KEY="ここにGoogle AIのAPIキーを貼り付け"
 
-# Google Search APIのキー
+Google Search APIのキー. 
 GOOGLE_API_KEY_SEARCH="ここにGoogle SearchのAPIキーを貼り付け"
 
-# Programmable Search Engine のID
-GOOGLE_CSE_ID="ここにCSE IDを貼り付け"
+Programmable Search Engine のID. 
+GOOGLE_CSE_ID="ここにCSE IDを貼り付け". 
 GOOGLE_API_KEY: Google AI Studio から取得できます。
 
 GOOGLE_API_KEY_SEARCH と GOOGLE_CSE_ID: Google Cloud Console と Programmable Search Engine から取得できます。
@@ -73,7 +73,7 @@ GOOGLE_API_KEY_SEARCH と GOOGLE_CSE_ID: Google Cloud Console と Programmable S
 
 '''
 
-#### 4. アプリケーションの実行
+## 4. アプリケーションの実行
 以下のコマンドで、Streamlitアプリケーションを起動します。
 
 Bashバッシュ
