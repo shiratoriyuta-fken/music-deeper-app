@@ -29,13 +29,12 @@ Git
 ## 2. インストール
 まず、このリポジトリをローカル環境にクローン（ダウンロード）します。
 
-Bashバッシュ
+git clone https://github.com/あなたのユーザー名/music-discovery-app.git. 
+cd music-discovery-app. 
 
-git clone https://github.com/あなたのユーザー名/music-discovery-app.git
-cd music-discovery-app
-次に、Pythonの仮想環境を作成し、必要なライブラリをインストールします。
+次に、Pythonの仮想環境を作成し、必要なライブラリをインストールします。  
 
-Bashバッシュ
+```
 
 #### 仮想環境の作成
 python -m venv venv
@@ -48,15 +47,16 @@ source venv/bin/activate
 #### 必要なライブラリのインストール
 pip install -r requirements.txt
 
+```
+
 ## 3. APIキーの設定
 このアプリケーションを実行するには、3種類のAPIキーが必要です。
 プロジェクトのルートディレクトリ（main.pyと同じ場所）に.envという名前のファイルを作成し、以下の内容を記述してください。
 
-コード スニペット
 
 ```
 
-.env
+# .env
 Google AI (Gemini) のAPIキー. 
 GOOGLE_API_KEY="ここにGoogle AIのAPIキーを貼り付け"
 
