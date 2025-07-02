@@ -54,7 +54,7 @@ pip install -r requirements.txt
 
 コード スニペット
 
-'''
+```
 
 .env
 Google AI (Gemini) のAPIキー. 
@@ -71,7 +71,7 @@ GOOGLE_API_KEY_SEARCH と GOOGLE_CSE_ID: Google Cloud Console と Programmable S
 
 重要: .gitignoreファイルに.envが記載されているため、このファイルがGitHubに公開されることはありません。
 
-'''
+```
 
 ## 4. アプリケーションの実行
 以下のコマンドで、Streamlitアプリケーションを起動します。
